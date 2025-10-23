@@ -12,9 +12,10 @@ export default function Sidebar() {
       <div className="nav-group">
         <div className="nav-group-title">PREPARE & PRACTICE</div>
         <NavLink href="/">Home</NavLink>
-        <NavLink href="/prepare?cat=physics">Physics</NavLink>
-        <NavLink href="/prepare?cat=chemistry">Chemistry</NavLink>
-        <NavLink href="/prepare?cat=mathematics">Mathematics</NavLink>
+        <NavLink href="/notes">Lecture Notes</NavLink>
+        <NavLink href="/mind-maps">Mind Map</NavLink>
+        <NavLink href="/dpps">DPPs</NavLink>
+        <NavLink href="/question-bank">Question Bank</NavLink>
         <NavLink href="/live-tests">Live Tests</NavLink>
       </div>
       <div className="nav-group">
@@ -25,8 +26,10 @@ export default function Sidebar() {
         <NavLink href="/messages">Messages</NavLink>
       </div>
       <div className="nav-group">
-        <div className="nav-group-title">PURCHASE PLANS & INFO</div>
-        <NavLink href="/purchase">Purchase</NavLink>
+        <div className="nav-group-title">ADMIN</div>
+        <NavLink href="/admin">Upload</NavLink>
+        <NavLink href="/admin/tests">Create Tests</NavLink>
+        <NavLink href="/admin/login">Login</NavLink>
       </div>
     </div>
   );

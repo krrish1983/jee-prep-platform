@@ -27,3 +27,7 @@ storage/mind-maps/**
 !storage/mind-maps/.gitkeep
 storage/questions/**
 !storage/questions/.gitkeep
+storage/dpps/**
+!storage/dpps/.gitkeep
+storage/tests/**
+!storage/tests/.gitkeep

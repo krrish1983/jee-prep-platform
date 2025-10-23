@@ -28,6 +28,7 @@ export default function AdminPage() {
           <select value={type} onChange={(e) => setType(e.target.value as any)}>
             <option value="lecture-notes">Lecture Notes</option>
             <option value="mind-maps">Mind Maps</option>
+            <option value="dpps">DPPs</option>
             <option value="questions">Questions</option>
           </select>
         </label>

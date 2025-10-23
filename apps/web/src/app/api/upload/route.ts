@@ -7,7 +7,10 @@ import { STORAGE_DIRS, type UploadType } from '@/lib/constants';
 import { saveUploadedFile, sanitizeFilename } from '@/lib/fs';
 import type { QuestionMeta } from '@/lib/types';
 
+import { requireAdminCookie } from '@/lib/auth';
+
 export async function POST(req: Request) {
+  if (!requireAdminCookie(req)) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   const { searchParams } = new URL(req.url);
   const type = (searchParams.get('type') || 'lecture-notes') as UploadType;
   const form = await req.formData();

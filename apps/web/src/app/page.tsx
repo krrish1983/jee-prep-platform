@@ -4,11 +4,12 @@ export default function Page() {
   return (
     <div className="container">
       <div className="section">
-        <h2>Prepare & Practice</h2>
-        <div className="grid cols-3">
-          <Tile title="Physics" color="primary" icon={<span>⚛️</span>} href="/prepare?cat=physics" />
-          <Tile title="Chemistry" color="secondary" icon={<span>🧪</span>} href="/prepare?cat=chemistry" />
-          <Tile title="Maths" color="tertiary" icon={<span>📐</span>} href="/prepare?cat=mathematics" />
+        <h2>Prepare & Practice (Maths)</h2>
+        <div className="grid cols-4">
+          <Tile title="Lecture Notes" color="primary" icon={<span>📄</span>} href="/notes" />
+          <Tile title="Mind Map" color="secondary" icon={<span>🧠</span>} href="/mind-maps" />
+          <Tile title="DPPs" color="tertiary" icon={<span>🗂️</span>} href="/dpps" />
+          <Tile title="Question Bank" color="blue" icon={<span>📚</span>} href="/question-bank" />
         </div>
       </div>
 
@@ -24,13 +25,13 @@ export default function Page() {
 
       <div className="section">
         <h2>Test Series</h2>
-        <div className="grid cols-2">
-          <Tile title="VIEW MORE" color="blue" icon={<span>⬅️</span>} href="/tests/series/1" />
-          <Tile title="VIEW MORE" color="blue" icon={<span>➡️</span>} href="/tests/series/2" />
-        </div>
-        <div className="grid cols-2" style={{ marginTop: 16 }}>
+        <div className="grid cols-2" style={{ marginTop: 0 }}>
           <Tile title="Grand Tests" color="slate" icon={<span>📝</span>} href="/tests/grand" />
           <Tile title="Topicwise Tests" color="slate" icon={<span>✅</span>} href="/tests/topicwise" />
+        </div>
+        <div className="grid cols-2" style={{ marginTop: 16 }}>
+          <Tile title="Live Tests" color="slate" icon={<span>📺</span>} href="/live-tests" />
+          <Tile title="Admin: Create Tests" color="blue" icon={<span>⚙️</span>} href="/admin/tests" />
         </div>
       </div>
     </div>
