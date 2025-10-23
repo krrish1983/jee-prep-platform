@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: jee-prep-web
+    env: node
+    plan: free
+    rootDir: apps/web
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    autoDeploy: true
+    disk:
+      name: app-data
+      mountPath: /opt/render/project/src/storage
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: 18

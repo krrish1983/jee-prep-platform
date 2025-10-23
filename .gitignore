@@ -1,0 +1,29 @@
+# Windows / Node / Editors
+node_modules/
+.next/
+dist/
+build/
+out/
+coverage/
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+
+# App data
+storage/**
+!storage/.gitkeep
+storage/lecture-notes/**
+!storage/lecture-notes/.gitkeep
+storage/mind-maps/**
+!storage/mind-maps/.gitkeep
+storage/questions/**
+!storage/questions/.gitkeep
