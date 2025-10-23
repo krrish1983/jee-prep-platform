@@ -1,25 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const items = [
-  { href: '/', label: 'Home', group: 'PREPARE & PRACTICE' },
-  { href: '/prepare?cat=physics', label: 'Physics' },
-  { href: '/prepare?cat=chemistry', label: 'Chemistry' },
-  { href: '/prepare?cat=mathematics', label: 'Mathematics' },
-  { href: '/live-tests', label: 'Live Tests' },
-  { divider: true },
-  { group: 'ANALYSE, COMPETE & DISCUSS' },
-  { href: '/performance', label: 'Performance' },
-  { href: '/competitors', label: 'Competitors' },
-  { href: '/social', label: 'SocialWall' },
-  { href: '/messages', label: 'Messages' },
-  { divider: true },
-  { group: 'PURCHASE PLANS & INFO' },
-  { href: '/purchase', label: 'Purchase' },
-];
-
 export default function Sidebar() {
-  const pathname = usePathname();
   return (
     <div>
       <div className="nav-group">
